@@ -121,11 +121,29 @@
         height: 480px;
         object-fit: cover;
         font-size: 14px;
-        line-height: 1.8;
-        
+        line-height: 2;
+
     }
-    .list .product-name{
+
+    .list .product-name {
         text-align: center;
+        font-weight: bold;
+    }
+
+    .fa-cart-shopping {
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .sold {
+        float: right;
+        margin-right: 50px;
+    }
+
+    .where {
+        float: right;
+        margin-right: 50px;
     }
 
     .image {
@@ -134,10 +152,13 @@
     }
 
     .price {
-        color: #f94b2e;
         display: inline-block;
+        text-align: center;
+        color: #f94b2e;
+        width: 120px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -146,7 +167,18 @@
         width: 90%;
         line-height: 1.5;
     }
-    
+
+    @media screen and (min-width: 992px) {
+        .menu-list {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .menu-list {
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -220,35 +252,35 @@
         <div class="list">
             <img class="image" src="./image_html_css/iphone11promax.jpg" alt="Iphone12ProMax"><br>
             <span class="product-name">Iphone 12 Pro Max</span><br>
-            <span class="price">35.000.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <span class="price">35.000.000đ<i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i></span><br>
             <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">48 đã bán</span><br>
-            <span class="where">Apple</span> <span class="where">Hà Nội</span>
+            <span>Apple</span> <span class="where">Hà Nội</span>
         </div>
         <div class="list">
             <img class="image" src="./image_html_css/DacNhanTam.jpg" alt="Đắc nhân tâm"><br>
             <span class="product-name">Đắc nhân tâm</span><br>
-            <span class="price">56.100đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <span class="price">56.100đ<i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i></span><br>
             <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">16498 đã bán</span><br>
             <span class="where">Hà Nội</span>
         </div>
         <div class="list">
             <img class="image" src="./image_html_css/haohao.jpg" alt="Thùng mỳ hảo hảo"><br>
             <span class="product-name">Thùng mỳ hảo hảo</span><br>
-            <span class="price">108.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <span class="price">108.000đ<i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i></span><br>
             <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">14905 đã bán</span><br>
             <span class="where">Hồ Chí Minh</span>
         </div>
         <div class="list">
             <img class="image" src="./image_html_css/BiaHeineken.jpg" alt="Thùng bia Heineken"><br>
             <span class="product-name">Thùng bia Heineken</span><br>
-            <span class="price">405.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <span class="price">405.000đ<i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i></span><br>
             <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">6843 đã bán</span><br>
             <span class="where">Hồ Chí Minh</span>
         </div>
         <div class="list">
             <img class="image" src="./image_html_css/sunlight.jpg" alt="Nước rửa chén Sunlight"><br>
             <span class="product-name">Nước rửa chén Sunlight</span><br>
-            <span class="price">91.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <span class="price">91.000đ<i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i></span><br>
             <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">3516 đã bán</span><br>
             <span class="where">Hồ Chí Minh</span>
         </div>
@@ -260,8 +292,8 @@
                 <li>
                     <h4>CHĂM SÓC KHÁCH HÀNG</h4>
                 </li>
-                <li>Trung tâm trợ giúp</li>
-                <li>Hướng dẫn mua hàng</li>
+                <li><a href="#">Trung tâm trợ giúp</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
             </ul>
         </div>
         <div>
@@ -269,9 +301,9 @@
                 <li>
                     <h4>GIỚI THIỆU</h4>
                 </li>
-                <li>Điều khoản</li>
-                <li>Chính sách bảo mật</li>
-                <li>Tuyển dụng</li>
+                <li><a href="#">Điều khoản</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
             </ul>
         </div>
         <div>
@@ -279,10 +311,10 @@
                 <li>
                     <h4>DANH MỤC SẢN PHẨM</h4>
                 </li>
-                <li>Thời trang</li>
-                <li>Đồ tiêu dùng</li>
-                <li>Thiết bị điện tử</li>
-                <li>Sách</li>
+                <li><a href="#">Thời trang</a></li>
+                <li><a href="#">Đồ tiêu dùng</a></li>
+                <li><a href="#">Thiết bị điện tử</a></li>
+                <li><a href="#">Sách</a></li>
             </ul>
         </div>
         <div>
@@ -290,9 +322,9 @@
                 <li>
                     <h4>THEO DÕI CHÚNG TÔI</h4>
                 </li>
-                <li><i class="fa-brands fa-facebook"></i>Facebook</li>
-                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
-                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+                <li><a href="#"><i class="fa-brands fa-facebook" style="margin-right: 8px;"></i>Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" style="padding-right: 10px;"></i>Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" style="padding-right: 5px;"></i>Twitter</a></li>
             </ul>
         </div>
         <div>
