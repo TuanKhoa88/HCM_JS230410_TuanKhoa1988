@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikkei Academy Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .top {
+
+        margin: 10px;
+    }
+
+    .logo {
+        float: right;
+        margin: 50px 10px 30px 0;
+    }
+
+    .shop-name {
+        width: 450px;
+        height: 30px;
+        font-size: 35px;
+        word-wrap: break-word;
+        white-space: nowrap;
+        color: #ffffff;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        background-color: #f94b2e;
+        width: 90%;
+        height: 90px;
+    }
+
+    .fa-solid {
+        display: block;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    a {
+        display: block;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .search-icon {
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 10%;
+
+    }
+
+    .textbox {
+        display: block;
+        margin-right: 5px;
+
+    }
+
+    .cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .circle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .list-item {
+        color: black;
+        font-size: 16px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .list {
+        width: 220px;
+        height: 480px;
+        object-fit: cover;
+        font-size: 14px;
+        line-height: 1.8;
+        
+    }
+    .list .product-name{
+        text-align: center;
+    }
+
+    .image {
+        width: 160px;
+        height: 330px;
+    }
+
+    .price {
+        color: #f94b2e;
+        display: inline-block;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        border-bottom: 3px solid black;
+        width: 90%;
+        line-height: 1.5;
+    }
+    
+</style>
+
+<body>
+    <div class="top">
+        <img class="logo" style="width: 370px; height: 60px;" src="./image_html_css/Logo-Rikkei.png"
+            alt="Logo Rikkei Academy">
+    </div>
+    <div class="navbar">
+        <h1 class="shop-name">RIKKEI_ACADEMY_SHOP</h1>
+        <div class="search">
+            <input class="textbox" type="text"
+                style="width: 200px; height: 30px; border-color: #ffffff; border-radius: 1%;"
+                placeholder="Tìm kiếm theo tên sản phẩm">
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"
+                    style="color: #f94b2e; font-size: 160%;"></i></div>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <a href="#" style="color: #ffffff;">Giỏ hàng</a>
+        </div>
+        <a href="#" style="color: #ffffff;">Đăng nhập</a>
+        <a href="#" style="color: #ffffff;">Đăng ký</a>
+    </div>
+    <div class="menu">
+        <ul class="circle" style="margin-bottom: 50px;">
+            <li><i class="fa-solid fa-circle" style="color: #dcdcdc; margin-right: 4px;"></i></li>
+            <li><i class="fa-solid fa-circle" style="color: #dcdcdc;margin-right: 4px"></i></li>
+            <li><i class="fa-solid fa-circle" style="color: #dcdcdc;margin-right: 4px"></i></li>
+            <li><i class="fa-solid fa-circle" style="color: #dcdcdc;margin-right: 4px"></i></li>
+            <li><i class="fa-solid fa-circle" style="color: #dcdcdc;margin-right: 4px"></i></li>
+        </ul>
+    </div>
+
+    <div class="menu-list">
+        <div class="list">
+            <ul>
+                <li>
+                    <a class="list-item" href="#">
+                        <pre>≡   Danh mục sản phẩm</pre>
+                    </a>
+                </li>
+                <li>
+                    <hr style="width: 220px; float: left;">
+                </li><br>
+                <li>
+                    <a class="list-item" href="#" style="color: #f94b2e;">▶ Tất cả sản phẩm</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#">
+                        <pre>    Thiết bị điện tử</pre>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-item" href="#">
+                        <pre>    Sách</pre>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-item" href="#">
+                        <pre>    Đồ tiêu dùng</pre>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-item" href="#">
+                        <pre>    Thời trang</pre>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="list">
+            <img class="image" src="./image_html_css/iphone11promax.jpg" alt="Iphone12ProMax"><br>
+            <span class="product-name">Iphone 12 Pro Max</span><br>
+            <span class="price">35.000.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">48 đã bán</span><br>
+            <span class="where">Apple</span> <span class="where">Hà Nội</span>
+        </div>
+        <div class="list">
+            <img class="image" src="./image_html_css/DacNhanTam.jpg" alt="Đắc nhân tâm"><br>
+            <span class="product-name">Đắc nhân tâm</span><br>
+            <span class="price">56.100đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">16498 đã bán</span><br>
+            <span class="where">Hà Nội</span>
+        </div>
+        <div class="list">
+            <img class="image" src="./image_html_css/haohao.jpg" alt="Thùng mỳ hảo hảo"><br>
+            <span class="product-name">Thùng mỳ hảo hảo</span><br>
+            <span class="price">108.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">14905 đã bán</span><br>
+            <span class="where">Hồ Chí Minh</span>
+        </div>
+        <div class="list">
+            <img class="image" src="./image_html_css/BiaHeineken.jpg" alt="Thùng bia Heineken"><br>
+            <span class="product-name">Thùng bia Heineken</span><br>
+            <span class="price">405.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">6843 đã bán</span><br>
+            <span class="where">Hồ Chí Minh</span>
+        </div>
+        <div class="list">
+            <img class="image" src="./image_html_css/sunlight.jpg" alt="Nước rửa chén Sunlight"><br>
+            <span class="product-name">Nước rửa chén Sunlight</span><br>
+            <span class="price">91.000đ</span><i class="fa-solid fa-cart-shopping" style="color: #f94b2e;"></i><br>
+            <i class="fa-regular fa-heart" style="color: #194694;"></i><span class="sold">3516 đã bán</span><br>
+            <span class="where">Hồ Chí Minh</span>
+        </div>
+    </div>
+    <hr style="margin-top: 50px; border-bottom: 3px solid #f94b2e; width: 90%;">
+    <div class="footer">
+        <div>
+            <ul>
+                <li>
+                    <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                </li>
+                <li>Trung tâm trợ giúp</li>
+                <li>Hướng dẫn mua hàng</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>GIỚI THIỆU</h4>
+                </li>
+                <li>Điều khoản</li>
+                <li>Chính sách bảo mật</li>
+                <li>Tuyển dụng</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>DANH MỤC SẢN PHẨM</h4>
+                </li>
+                <li>Thời trang</li>
+                <li>Đồ tiêu dùng</li>
+                <li>Thiết bị điện tử</li>
+                <li>Sách</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>THEO DÕI CHÚNG TÔI</h4>
+                </li>
+                <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>ĐỘI NGŨ PHÁT TRIỂN</h4>
+                </li>
+                <li style="color: #f94b2e;">Trịnh Quốc Hai</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
